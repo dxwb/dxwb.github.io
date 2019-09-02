@@ -2,57 +2,20 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <title>dxwb</title>
-</head>
-<style>
-  body{
-    margin: 0 auto;
-    width: 1200px;
-  }
-
-  h1{
-    padding-bottom: 20px;
-    border-bottom: 1px solid #ccc;
-    text-align: center;
-  }
-
-  .weekend-wrap{
-    text-align: center;
-  }
-
-  .weekend-wrap .txt{
-    font-size: 20px;
-    font-weight: bold;
-  }
-
-  #weekend-distance{
-    margin-top: 20px;
-  }
-</style>
-<body>
-
-  <h1>dxwb.github.io</h1>
-
-  <div class="weekend-wrap">
-    <div class="txt">距离快乐周末还有</div>
-    <div id="weekend-distance">
-      1天1小时1分1秒
-    </div>
-  </div>
-
-<script>
-  (function(){
-    var dom = document.getElementById('weekend-distance');
-    var date = new Date();
-    var week = date.getDay();
-
-    if(week === 6 || week === 7){
-      dom.innerText = '已经是快乐周末了';
-      return;
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body{
+      margin: 0;
     }
-
-    console.log(date.getDay());
-  })();
-</script>
-</body>
+    canvas{
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+<script type="text/javascript" src="main.js"></script></body>
 </html>
